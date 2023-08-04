@@ -1,0 +1,22 @@
+name: Run Shell Scripts
+
+on: push
+
+jobs:
+  run-scripts:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v2
+
+    - name: Make scripts executable
+      run: |
+        chmod +x test4.sh
+        chmod +x kakunin4.sh
+
+    - name: Run test4.sh
+      run: ./test4.sh
+
+    - name: Run kakunin4.sh
+      run: ./kakunin4.sh
