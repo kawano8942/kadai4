@@ -12,11 +12,11 @@ jobs:
 
     - name: Make scripts executable
       run: |
-        chmod +x test4.sh
-        chmod +x kakunin4.sh
+        chmod +x main.sh
+        chmod +x test_main.sh
 
-    - name: Run test4.sh
-      run: ./test4.sh
+    - name: Run main.sh
+      run: ./main.sh
 
-    - name: Run kakunin4.sh
-      run: ./kakunin4.sh
+    - name: Run test_main.sh
+      run: ./test_main.sh
