@@ -16,7 +16,7 @@ jobs:
         chmod +x test_main.sh
 
     - name: Run main.sh
-      run: ./main.sh 22 11
+      run: ./main.sh 121 11
 
     - name: Run test_main.sh
       run: ./test_main.sh
